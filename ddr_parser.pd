@@ -1,52 +1,52 @@
-#N canvas 993 137 580 433 12;
+#N canvas 312 312 580 433 12;
 #X obj 228 85 ggee/shell;
 #X msg 228 56 killall joystick;
 #X obj 39 134 route Button;
-#X obj 226 158 route 0 1 2 3 4 5 6 7 8 9;
-#X obj 226 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 39 165 route 0 1 2 3 4 5 6 7 8 9;
+#X obj 39 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 243 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 56 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 260 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 73 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 277 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 90 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 294 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 107 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 312 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 125 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 329 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 142 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 346 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 159 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 363 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 176 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 380 190 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 193 197 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 39 199 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 244 176 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 72 199 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 277 176 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 39 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 244 201 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 56 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 261 201 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 73 232 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 278 201 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 41 271 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 244 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 75 271 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 278 227 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 40 299 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 243 249 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 57 299 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 260 249 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 74 299 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 277 249 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 39 158 route 8 9;
-#X obj 123 207 route 6 0 7;
-#X obj 120 244 route 2 3;
-#X obj 123 281 route 4 1 5;
+#X obj 302 155 route 8 9;
+#X obj 301 182 route 6 0 7;
+#X obj 303 205 route 2 3;
+#X obj 301 228 route 4 1 5;
 #X text 22 9 DDR parser;
 #X text 191 8 require ggee/shell;
 #N canvas 481 153 450 300 stdjoy 0;
@@ -69,6 +69,10 @@
 #X connect 8 0 2 0;
 #X restore 39 78 pd stdjoy;
 #X obj 39 48 loadbang;
+#X obj 21 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 343 117 text define mapping_\$0;
+#X obj 58 358 noteout;
 #X connect 1 0 0 0;
 #X connect 2 0 3 0;
 #X connect 2 0 24 0;
@@ -97,3 +101,4 @@
 #X connect 27 2 23 0;
 #X connect 30 0 2 0;
 #X connect 31 0 30 0;
+#X connect 32 0 30 0;
