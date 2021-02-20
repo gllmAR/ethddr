@@ -1,61 +1,61 @@
-#N canvas 969 688 580 433 12;
-#X obj 228 85 ggee/shell;
-#X msg 228 56 killall joystick;
+#N canvas 148 168 580 433 12;
+#X obj 284 83 ggee/shell;
+#X msg 284 54 killall joystick;
 #X obj 38 107 route Button;
-#X obj 36 304 route 0 1 2 3 4 5 6 7 8 9;
-#X obj 36 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 37 356 route 0 1 2 3 4 5 6 7 8 9;
+#X obj 37 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 53 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 54 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 70 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 71 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 87 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 88 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 104 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 105 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 122 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 123 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 139 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 140 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 156 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 157 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 173 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 174 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 190 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 191 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 241 315 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 242 367 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 274 315 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 275 367 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 241 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 242 392 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 258 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 259 392 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 275 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 276 392 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 241 366 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 242 418 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 275 366 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 276 418 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 240 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 241 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 257 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 258 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 274 388 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 275 440 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 299 294 route 8 9;
-#X obj 298 321 route 6 0 7;
-#X obj 300 344 route 2 3;
-#X obj 298 367 route 4 1 5;
+#X obj 300 346 route 8 9;
+#X obj 299 373 route 6 0 7;
+#X obj 301 396 route 2 3;
+#X obj 299 419 route 4 1 5;
 #X text 22 9 DDR parser;
-#X text 191 8 require ggee/shell;
+#X text 191 7 require ggee/shell;
 #N canvas 481 153 450 300 stdjoy 0;
 #X obj 18 207 ggee/shell;
 #X obj 39 95 pdcontrol;
 #X msg 39 72 dir 0;
 #X obj 19 123 makefilename %s/stdjoy/joystick;
 #X obj 83 236 print shellout;
-#X msg 19 173 /home/pi/src/ethddr/stdjoy/joystick;
+#X msg 19 173 /Users/gllm/src/ethddr/stdjoy/joystick;
 #X msg 19 147 set \$1 \, bang;
 #X obj 19 271 outlet;
 #X obj 20 16 inlet;
@@ -71,14 +71,105 @@
 #X obj 39 48 loadbang;
 #X obj 21 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
 -1;
-#N canvas 52 424 831 330 filtrage 0;
+#X obj 39 321 t a a;
+#X obj 236 130 text define -k mapping_\$0;
+#A set 0 centre \; 1 centre \; 2 gauche \; 3 droite \; 4 gauche \;
+5 droite \; 6 gauche \; 7 droite \; 8 gauche \; 9 droite \;;
+#X obj 236 205 text define -k outputs_\$0;
+#A set 0 up \; 1 down \; 2 left \; 3 right \; 10 space \; 11 enter
+\;;
+#N canvas 819 564 450 300 map_1 0;
+#X obj 192 16 inlet;
+#X obj 48 94 text search mapping_\$0 0;
+#X obj 51 163 text get mapping_\$0 1 1;
+#X obj 192 62 list split 1;
+#X obj 171 209 list append;
+#X obj 172 244 outlet;
+#X obj 48 120 sel -1;
+#X obj 7 174 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 305 155 list;
+#X obj 193 38 t a a, f 20;
+#X obj 308 185 outlet;
+#X connect 0 0 9 0;
+#X connect 1 0 6 0;
+#X connect 2 0 4 0;
+#X connect 3 0 1 0;
+#X connect 3 1 4 1;
+#X connect 4 0 5 0;
+#X connect 6 0 7 0;
+#X connect 6 0 8 0;
+#X connect 6 1 2 0;
+#X connect 8 0 10 0;
+#X connect 9 0 3 0;
+#X connect 9 1 8 1;
+#X restore 65 134 pd map_1;
+#N canvas 802 462 450 300 map_2 0;
+#X obj 181 33 inlet;
+#X obj 182 63 list split 1;
+#X obj 148 164 list append;
+#X obj 149 199 outlet;
+#X obj 41 94 text search outputs_\$0 0;
+#X obj 41 128 text get outputs_\$0 1 1;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 2 1;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 5 0 2 0;
+#X restore 66 211 pd map_2;
+#X symbolatom 96 247 10 0 0 0 - - -;
+#X obj 78 249 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#N canvas 409 204 808 611 send_osc 0;
+#X obj 11 11 inlet;
+#X obj 12 275 netsend -b -u;
+#X obj 220 190 text get osc_out_\$0;
+#X msg 220 161 0;
+#X msg 220 214 disconnect \, connect \$1 \$2;
+#X obj 223 57 text define osc_out_\$0;
+#X obj 85 8 loadbang;
+#X msg 223 12 read -c osc_out.txt;
+#X msg 238 33 write -c osc_out.txt;
+#X obj 12 145 oscformat;
+#X obj 12 171 list prepend send;
+#X obj 12 196 list trim;
+#X obj 33 93 text get osc_out_\$0;
+#X msg 33 67 1;
+#X msg 33 118 set \$1;
+#X obj 82 32 t b b b;
+#X obj 66 10 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 9 0;
+#X connect 2 0 4 0;
+#X connect 3 0 2 0;
+#X connect 4 0 1 0;
+#X connect 6 0 15 0;
+#X connect 7 0 5 0;
+#X connect 8 0 5 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 11 0 1 0;
+#X connect 12 0 14 0;
+#X connect 13 0 12 0;
+#X connect 14 0 9 0;
+#X connect 15 0 13 0;
+#X connect 15 1 3 0;
+#X connect 15 2 7 0;
+#X connect 16 0 15 0;
+#X restore 67 273 pd send_osc;
+#X obj 164 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X msg 163 60 Button 11 \$1;
+#X obj 205 272 print;
+#N canvas 52 424 1025 391 filtre_complexe 0;
 #X obj 122 39 inlet;
 #X obj 122 66 list trim;
-#X text 29 558 cote droit;
+#X text 28 447 cote droit;
 #X text 574 26 up down left right;
 #X text 23 271 jump -> up;
 #X text 9 319 milieu -> down;
-#X text 25 512 cote gauche;
+#X text 24 401 cote gauche;
 #X obj 123 101 route centre gauche droite;
 #X msg 123 146 1 \$1;
 #X msg 182 146 2 \$1;
@@ -107,31 +198,35 @@
 #X restore 204 67 pd interface_tests;
 #X obj 470 114 array define -yrange 0 4 accum_\$0 4;
 #X obj 124 225 expr 0 \; if ($f2==1 \, accum_\$0[$f1]=accum_\$0[$f1]+1
-\, accum_\$0[$f1]= accum_\$0[$f1]-1), f 85;
+\, accum_\$0[$f1]= accum_\$0[$f1]-1), f 100;
 #X obj 124 272 expr 0 \; if(sum("accum_\$0") == 0 \, state_\$0[0]=1
-\, state_\$0[0]=0), f 83;
-#X obj 125 504 expr 0 \; if(accum_\$0[2]!=0 && accum_\$0[2]>accum_\$0[3]
-\, state_\$0[2]=1 \, state_\$0[2]=0) \;, f 83;
-#X obj 125 547 expr 0 \; if(accum_\$0[3]!=0 && accum_\$0[3]>accum_\$0[2]
-\, state_\$0[3]=1 \, state_\$0[3]=0) \;, f 83;
-#X obj 120 663 array min state_\$0;
-#X obj 121 693 sel -1;
-#X obj 177 694 print need_calib;
-#X obj 125 603 t b;
-#X obj 121 718 t b b;
-#X obj 119 777 array max state_\$0;
-#X obj 160 745 t b;
-#X obj 119 808 sel 1;
-#X obj 119 839 i;
-#X text 8 692 recalibrer si -1;
-#X text 10 783 sortir si =1;
-#X obj 119 873 outlet;
-#X text -39 436 milieu 0 si direction;
-#X obj 125 428 expr 0 \; if(accum_\$0[1]!=0 && accum_\$0[1]> accum_\$0[2]+accum_\$0[3]
+\, state_\$0[0]=0), f 100;
+#X obj 124 393 expr 0 \; if(accum_\$0[2]!=0 && accum_\$0[2]>accum_\$0[3]
+\, state_\$0[2]=1 \, state_\$0[2]=0) \;, f 100;
+#X obj 124 436 expr 0 \; if(accum_\$0[3]!=0 && accum_\$0[3]>accum_\$0[2]
+\, state_\$0[3]=1 \, state_\$0[3]=0) \;, f 100;
+#X obj 124 503 array min state_\$0;
+#X obj 125 533 sel -1;
+#X obj 124 476 t b;
+#X obj 125 558 t b b;
+#X obj 123 617 array max state_\$0;
+#X obj 163 588 t b;
+#X obj 123 648 sel 1;
+#X obj 123 679 i;
+#X text 4 534 recalibrer si -1;
+#X text 14 623 sortir si =1;
+#X obj 123 713 outlet;
+#X text -40 362 milieu 0 si direction;
+#X obj 124 354 expr 0 \; if(accum_\$0[1]!=0 && accum_\$0[1]> accum_\$0[2]+accum_\$0[3]
 \, state_\$0[1]=0 \, state_\$0[1]) \;, f 100;
 #X obj 469 146 array define -yrange 0 1 state_\$0 4;
 #X obj 124 314 expr 0 \; if( accum_\$0[2]==accum_\$0[3] && sum("accum_\$0")!=0
 \, state_\$0[1]=1 \, state_\$0[1]=0) \;, f 100;
+#X obj 398 51 inlet;
+#X obj 398 75 outlet;
+#X text 185 7 prend des mots et des etats en entree et sort des evenement
+non redondant;
+#X obj 195 557 print UNDERFLOW :: need_calib;
 #X connect 0 0 1 0;
 #X connect 1 0 7 0;
 #X connect 7 0 8 0;
@@ -142,72 +237,38 @@
 #X connect 10 0 14 0;
 #X connect 12 0 7 0;
 #X connect 14 0 15 0;
-#X connect 15 0 33 0;
+#X connect 15 0 32 0;
 #X connect 16 0 17 0;
-#X connect 17 0 21 0;
+#X connect 17 0 20 0;
 #X connect 18 0 19 0;
-#X connect 19 0 22 0;
-#X connect 19 1 24 0;
-#X connect 21 0 18 0;
-#X connect 22 0 20 0;
-#X connect 22 1 24 0;
-#X connect 23 0 25 0;
-#X connect 23 1 26 1;
-#X connect 24 0 23 0;
-#X connect 25 0 26 0;
-#X connect 26 0 29 0;
-#X connect 31 0 16 0;
-#X connect 33 0 31 0;
-#X restore 59 160 pd filtrage;
-#N canvas 0 23 450 300 remap 0;
-#X obj 63 50 inlet;
-#X obj 64 97 sel 0 1 2 3;
-#X msg 56 156 up;
-#X msg 95 184 down;
-#X msg 114 157 left;
-#X msg 137 134 right;
-#X connect 0 0 1 0;
-#X restore 223 444 pd remap;
-#X obj 38 269 t a a;
-#X obj 199 131 text define -k mapping_\$0;
-#A set 0 centre \; 1 centre \; 2 gauche \; 3 droite \; 4 gauche \;
-5 droite \; 6 gauche \; 7 droite \; 8 gauche \; 9 droite \;;
-#X obj 197 183 text define -k outputs_\$0;
-#A set 0 up \; 1 down \; 2 left \; 3 right \;;
-#N canvas 819 483 450 300 map_1 0;
-#X obj 181 33 inlet;
-#X obj 41 94 text search mapping_\$0 0;
-#X obj 41 128 text get mapping_\$0 1 1;
-#X obj 182 63 list split 1;
-#X obj 148 164 list append;
-#X obj 149 199 outlet;
-#X connect 0 0 3 0;
-#X connect 1 0 2 0;
-#X connect 2 0 4 0;
-#X connect 3 0 1 0;
-#X connect 3 1 4 1;
-#X connect 4 0 5 0;
-#X restore 59 134 pd map_1;
-#N canvas 819 483 450 300 map_2 0;
-#X obj 181 33 inlet;
-#X obj 182 63 list split 1;
-#X obj 148 164 list append;
-#X obj 149 199 outlet;
-#X obj 41 94 text search outputs_\$0 0;
-#X obj 41 128 text get outputs_\$0 1 1;
-#X connect 0 0 1 0;
-#X connect 1 0 4 0;
-#X connect 1 1 2 1;
+#X connect 19 0 21 0;
+#X connect 19 1 23 0;
+#X connect 20 0 18 0;
+#X connect 21 0 36 0;
+#X connect 21 1 23 0;
+#X connect 22 0 24 0;
+#X connect 22 1 25 1;
+#X connect 23 0 22 0;
+#X connect 24 0 25 0;
+#X connect 25 0 28 0;
+#X connect 30 0 16 0;
+#X connect 32 0 30 0;
+#X connect 33 0 34 0;
+#X restore 65 182 pd filtre_complexe;
+#N canvas 0 23 450 300 filtre_on 0;
+#X obj 65 17 inlet;
+#X obj 105 107 outlet;
+#X obj 65 46 expr if($f2==1 \, $f1 \, -1);
+#X obj 65 75 sel -1;
+#X text 143 23 list de deux chiffres entre;
+#X text 162 106 un chiffre sort quand on;
+#X connect 0 0 2 0;
 #X connect 2 0 3 0;
-#X connect 4 0 5 0;
-#X connect 5 0 2 0;
-#X restore 60 185 pd map_2;
-#X symbolatom 78 208 10 0 0 0 - - -;
-#X obj 60 210 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
+#X connect 3 1 1 0;
+#X restore 75 159 pd filtre_on;
 #X connect 1 0 0 0;
-#X connect 2 0 38 0;
-#X connect 2 0 35 0;
+#X connect 2 0 36 0;
+#X connect 2 0 33 0;
 #X connect 3 0 4 0;
 #X connect 3 1 5 0;
 #X connect 3 2 6 0;
@@ -234,9 +295,15 @@
 #X connect 30 0 2 0;
 #X connect 31 0 30 0;
 #X connect 32 0 30 0;
-#X connect 33 0 39 0;
-#X connect 35 0 3 0;
-#X connect 35 1 24 0;
-#X connect 38 0 33 0;
-#X connect 39 0 40 0;
-#X connect 39 0 41 0;
+#X connect 33 0 3 0;
+#X connect 33 1 24 0;
+#X connect 36 0 44 0;
+#X connect 36 1 45 0;
+#X connect 37 0 38 0;
+#X connect 37 0 39 0;
+#X connect 37 0 40 0;
+#X connect 41 0 42 0;
+#X connect 42 0 2 0;
+#X connect 44 0 37 0;
+#X connect 44 1 37 0;
+#X connect 45 0 44 1;
