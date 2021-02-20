@@ -1,4 +1,4 @@
-#N canvas 833 31 580 433 12;
+#N canvas 969 688 580 433 12;
 #X obj 228 85 ggee/shell;
 #X msg 228 56 killall joystick;
 #X obj 38 107 route Button;
@@ -15,23 +15,23 @@
 1;
 #X obj 122 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 139 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 139 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 156 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 156 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
-#X obj 173 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 173 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 190 336 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 241 315 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 241 315 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 274 315 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 241 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 241 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 258 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 275 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 275 340 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 241 366 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -55,7 +55,7 @@
 #X msg 39 72 dir 0;
 #X obj 19 123 makefilename %s/stdjoy/joystick;
 #X obj 83 236 print shellout;
-#X msg 19 173 /Users/gllm/src/ethddr/stdjoy/joystick;
+#X msg 19 173 /home/pi/src/ethddr/stdjoy/joystick;
 #X msg 19 147 set \$1 \, bang;
 #X obj 19 271 outlet;
 #X obj 20 16 inlet;
@@ -73,7 +73,6 @@
 -1;
 #N canvas 52 424 831 330 filtrage 0;
 #X obj 122 39 inlet;
-#X obj 76 99 print;
 #X obj 122 66 list trim;
 #X text 29 558 cote droit;
 #X text 574 26 up down left right;
@@ -133,33 +132,32 @@
 #X obj 469 146 array define -yrange 0 1 state_\$0 4;
 #X obj 124 314 expr 0 \; if( accum_\$0[2]==accum_\$0[3] && sum("accum_\$0")!=0
 \, state_\$0[1]=1 \, state_\$0[1]=0) \;, f 100;
-#X connect 0 0 2 0;
-#X connect 2 0 1 0;
-#X connect 2 0 8 0;
-#X connect 8 0 9 0;
-#X connect 8 1 10 0;
-#X connect 8 2 11 0;
-#X connect 9 0 15 0;
-#X connect 10 0 15 0;
-#X connect 11 0 15 0;
-#X connect 13 0 8 0;
-#X connect 15 0 16 0;
-#X connect 16 0 34 0;
-#X connect 17 0 18 0;
-#X connect 18 0 22 0;
-#X connect 19 0 20 0;
-#X connect 20 0 23 0;
-#X connect 20 1 25 0;
-#X connect 22 0 19 0;
-#X connect 23 0 21 0;
-#X connect 23 1 25 0;
-#X connect 24 0 26 0;
-#X connect 24 1 27 1;
-#X connect 25 0 24 0;
-#X connect 26 0 27 0;
-#X connect 27 0 30 0;
-#X connect 32 0 17 0;
-#X connect 34 0 32 0;
+#X connect 0 0 1 0;
+#X connect 1 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 1 9 0;
+#X connect 7 2 10 0;
+#X connect 8 0 14 0;
+#X connect 9 0 14 0;
+#X connect 10 0 14 0;
+#X connect 12 0 7 0;
+#X connect 14 0 15 0;
+#X connect 15 0 33 0;
+#X connect 16 0 17 0;
+#X connect 17 0 21 0;
+#X connect 18 0 19 0;
+#X connect 19 0 22 0;
+#X connect 19 1 24 0;
+#X connect 21 0 18 0;
+#X connect 22 0 20 0;
+#X connect 22 1 24 0;
+#X connect 23 0 25 0;
+#X connect 23 1 26 1;
+#X connect 24 0 23 0;
+#X connect 25 0 26 0;
+#X connect 26 0 29 0;
+#X connect 31 0 16 0;
+#X connect 33 0 31 0;
 #X restore 59 160 pd filtrage;
 #N canvas 0 23 450 300 remap 0;
 #X obj 63 50 inlet;
