@@ -1,0 +1,3 @@
+[submodule "libs/joyosc"]
+	path = libs/joyosc
+	url = https://github.com/danomatika/joyosc
