@@ -1,0 +1,25 @@
+#N canvas 0 50 450 300 12;
+#X obj 192 16 inlet;
+#X obj 192 62 list split 1;
+#X obj 156 197 list append;
+#X obj 156 222 outlet;
+#X obj 48 120 sel -1;
+#X obj 7 174 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 305 155 list;
+#X obj 193 38 t a a, f 20;
+#X obj 308 185 outlet;
+#X obj 48 94 text search \$1 0;
+#X obj 82 160 text get \$1 1 1;
+#X connect 0 0 7 0;
+#X connect 1 0 9 0;
+#X connect 1 1 2 1;
+#X connect 2 0 3 0;
+#X connect 4 0 5 0;
+#X connect 4 0 6 0;
+#X connect 4 1 10 0;
+#X connect 6 0 8 0;
+#X connect 7 0 1 0;
+#X connect 7 1 6 1;
+#X connect 9 0 4 0;
+#X connect 10 0 2 0;

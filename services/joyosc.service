@@ -1,0 +1,8 @@
+[Unit]
+Description=joyosc
+
+[Service]
+ExecStart=/usr/local/bin/joyosc
+
+[Install]
+WantedBy=default.target

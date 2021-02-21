@@ -15,7 +15,7 @@ cd https://github.com/gllmAR/ethddr
 ##### raspbian dependencies
 
 ```
-sudo apt-get install libsdl2-dev liblo-dev libtinyxml2-dev
+sudo apt-get install libsdl2-dev liblo-dev libtinyxml2-dev liblo10k1-dev
 ```
 
 ##### config make 

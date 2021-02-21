@@ -1,85 +1,13 @@
-#N canvas 82 100 580 519 12;
-#X obj 263 63 ggee/shell;
-#X msg 263 34 killall joystick;
-#X obj 38 107 route Button;
-#X obj 38 397 route 0 1 2 3 4 5 6 7 8 9;
-#X obj 38 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 55 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 72 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 89 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 106 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 124 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 141 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 158 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 175 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 192 429 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 243 408 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 276 408 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 243 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
-1;
-#X obj 260 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 277 433 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 243 459 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 277 459 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 242 481 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 259 481 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 276 481 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
-#X obj 301 387 route 8 9;
-#X obj 300 414 route 6 0 7;
-#X obj 302 437 route 2 3;
-#X obj 300 460 route 4 1 5;
-#X text 461 -44 DDR parser;
-#X text 191 7 require ggee/shell;
-#N canvas 481 153 450 300 stdjoy 0;
-#X obj 18 207 ggee/shell;
-#X obj 39 95 pdcontrol;
-#X msg 39 72 dir 0;
-#X obj 19 123 makefilename %s/stdjoy/joystick;
-#X obj 83 236 print shellout;
-#X msg 19 173 /home/pi/src/ethddr/stdjoy/joystick;
-#X msg 19 147 set \$1 \, bang;
-#X obj 19 271 outlet;
-#X obj 20 16 inlet;
-#X connect 0 0 7 0;
-#X connect 0 1 4 0;
-#X connect 1 0 3 0;
-#X connect 2 0 1 0;
-#X connect 3 0 6 0;
-#X connect 5 0 0 0;
-#X connect 6 0 5 0;
-#X connect 8 0 2 0;
-#X restore 39 78 pd stdjoy;
-#X obj 39 48 loadbang;
-#X obj 21 51 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 38 355 t a a;
-#X obj 235 128 text define -k mapping_\$0;
+#N canvas 1039 240 578 481 12;
+#X text 199 29 DDR parser;
+#X obj 294 88 text define -k mapping_\$0;
 #A set 0 centre \; 1 centre \; 2 gauche \; 3 droite \; 4 gauche \;
 5 droite \; 6 gauche \; 7 droite \;;
-#X obj 256 198 text define -k outputs_\$0;
+#X obj 293 182 text define -k outputs_\$0;
 #A set 0 up \; 1 down \; 2 left \; 3 right \; 8 space \; 9 enter \;
 ;
-#X symbolatom 216 282 10 0 0 0 - - -;
-#X obj 198 284 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X symbolatom 146 253 10 0 0 0 - - -;
+#X obj 128 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 409 204 808 611 send_osc 0;
 #X obj 11 11 inlet;
@@ -118,9 +46,7 @@
 #X connect 15 1 3 0;
 #X connect 15 2 7 0;
 #X connect 16 0 15 0;
-#X restore 187 306 pd send_osc;
-#X obj 164 38 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
-1;
+#X restore 117 277 pd send_osc;
 #N canvas 706 180 1081 878 filtre_complexe 0;
 #X obj 162 83 inlet;
 #X obj 162 110 list trim;
@@ -164,33 +90,34 @@
 #X obj 165 577 sel -1;
 #X obj 164 520 t b;
 #X obj 165 602 t b b;
-#X obj 163 661 array max state_\$0;
-#X obj 203 632 t b;
-#X obj 163 692 sel 1;
-#X obj 163 723 i;
+#X obj 213 711 array max state_\$0;
+#X obj 209 677 t b;
+#X obj 213 742 sel 1;
+#X obj 213 773 i;
 #X text 44 578 recalibrer si -1;
-#X text 54 667 sortir si =1;
-#X obj 163 757 outlet;
+#X text 53 679 sortir si =1;
+#X obj 213 807 outlet;
 #X obj 164 398 expr 0 \; if(accum_\$0[1]!=0 && accum_\$0[1]> accum_\$0[2]+accum_\$0[3]
 \, state_\$0[1]=0 \, state_\$0[1]) \;, f 100;
 #X obj 509 190 array define -yrange 0 1 state_\$0 4;
 #X obj 164 358 expr 0 \; if( accum_\$0[2]==accum_\$0[3] && sum("accum_\$0")!=0
 \, state_\$0[1]=1 \, state_\$0[1]=0) \;, f 100;
-#X obj 438 138 inlet;
-#X obj 438 162 outlet;
-#X obj 235 601 print UNDERFLOW :: need_calib;
+#X obj 377 147 inlet;
+#X obj 362 195 outlet;
+#X obj 165 632 print UNDERFLOW :: need_calib;
 #X text 785 157 donnees entrantes;
 #X text 783 191 donnees sortantes;
 #X text 209 23 Sort des evements non redondant;
 #X text -8 6 In gauche centre droite 0/1;
 #X text -9 22 Out up down left right;
-#X text 209 7 Sprend des mots et des etats en entree;
 #X text 47 279 data -> accum;
 #X text 45 322 cnd jump (up);
 #X text 31 366 cnd milieu (down);
 #X text 22 407 si direction;
 #X msg 510 130 const 0;
 #X obj 526 82 r reset_\$0;
+#X text 209 7 Prend des mots et des etats en entree;
+#X obj 48 635 send reset_\$0;
 #X connect 0 0 1 0;
 #X connect 1 0 4 0;
 #X connect 4 0 5 0;
@@ -210,6 +137,7 @@
 #X connect 15 1 19 0;
 #X connect 16 0 14 0;
 #X connect 17 0 30 0;
+#X connect 17 0 43 0;
 #X connect 17 1 19 0;
 #X connect 18 0 20 0;
 #X connect 18 1 21 1;
@@ -219,9 +147,9 @@
 #X connect 25 0 12 0;
 #X connect 27 0 25 0;
 #X connect 28 0 29 0;
-#X connect 41 0 9 0;
-#X connect 42 0 41 0;
-#X restore 65 182 pd filtre_complexe;
+#X connect 40 0 9 0;
+#X connect 41 0 40 0;
+#X restore 95 152 pd filtre_complexe;
 #N canvas 0 23 450 300 filtre_on 0;
 #X obj 65 17 inlet;
 #X obj 105 107 outlet;
@@ -232,48 +160,7 @@
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 1 1 0;
-#X restore 119 157 pd filtre_on;
-#X msg 163 60 Button 9 \$1;
-#N canvas 819 564 450 300 map_mapping 0;
-#X obj 192 16 inlet;
-#X obj 48 94 text search mapping_\$0 0;
-#X obj 51 163 text get mapping_\$0 1 1;
-#X obj 192 62 list split 1;
-#X obj 171 209 list append;
-#X obj 172 244 outlet;
-#X obj 48 120 sel -1;
-#X obj 7 174 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
--1;
-#X obj 305 155 list;
-#X obj 193 38 t a a, f 20;
-#X obj 308 185 outlet;
-#X connect 0 0 9 0;
-#X connect 1 0 6 0;
-#X connect 2 0 4 0;
-#X connect 3 0 1 0;
-#X connect 3 1 4 1;
-#X connect 4 0 5 0;
-#X connect 6 0 7 0;
-#X connect 6 0 8 0;
-#X connect 6 1 2 0;
-#X connect 8 0 10 0;
-#X connect 9 0 3 0;
-#X connect 9 1 8 1;
-#X restore 65 134 pd map_mapping;
-#N canvas 802 462 450 300 map_outputs 0;
-#X obj 181 33 inlet;
-#X obj 182 63 list split 1;
-#X obj 148 164 list append;
-#X obj 149 199 outlet;
-#X obj 41 94 text search outputs_\$0 0;
-#X obj 41 128 text get outputs_\$0 1 1;
-#X connect 0 0 1 0;
-#X connect 1 0 4 0;
-#X connect 1 1 2 1;
-#X connect 2 0 3 0;
-#X connect 4 0 5 0;
-#X connect 5 0 2 0;
-#X restore 188 249 pd map_outputs;
+#X restore 239 127 pd filtre_on;
 #N canvas 683 145 808 379 send_dmx 0;
 #X obj 72 110 inlet;
 #X obj 129 614 netsend -b -u;
@@ -346,57 +233,170 @@
 #X connect 30 0 31 0;
 #X connect 30 1 24 0;
 #X connect 31 0 5 0;
-#X restore 178 329 pd send_dmx;
-#X obj 77 18 s reset_\$0;
-#X obj 21 -11 t b b b;
-#X obj 22 -36 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+#X restore 108 300 pd send_dmx;
+#N canvas 805 102 709 734 joyosc 0;
+#X obj 119 291 bng 15 250 50 0 empty empty empty 0 20 0 10 -262144
+-1 -1;
+#X obj 164 293 bng 15 250 50 0 empty empty empty 0 20 0 10 -262144
+-1 -1;
+#X obj 210 309 bng 15 250 50 0 empty empty open 0 20 0 10 -262144 -1
 -1;
-#X text 51 -40 reset;
-#X obj 21 18 del 500;
-#X connect 1 0 0 0;
-#X connect 2 0 43 0;
-#X connect 2 0 33 0;
-#X connect 3 0 4 0;
-#X connect 3 1 5 0;
-#X connect 3 2 6 0;
-#X connect 3 3 7 0;
-#X connect 3 4 8 0;
-#X connect 3 5 9 0;
-#X connect 3 6 10 0;
-#X connect 3 7 11 0;
-#X connect 3 8 12 0;
-#X connect 3 9 13 0;
-#X connect 24 0 14 0;
-#X connect 24 1 15 0;
+#X obj 256 311 bng 15 250 50 0 empty empty close 0 20 0 10 -262144
+-1 -1;
+#X text 129 232 joyosc deamon events;
+#X obj 25 199 route devices notifications;
+#X obj 25 168 route joyosc;
+#X obj 130 100 tgl 15 0 empty empty print_all_messages 17 7 0 10 -262144
+-1 -1 0 1;
+#N canvas -12 555 478 479 oscreceive 0;
+#X obj 110 296 oscparse;
+#X obj 110 325 list trim;
+#X obj 130 398 spigot;
+#X obj 110 450 outlet;
+#X obj 163 364 inlet;
+#X obj 130 424 print OSC;
+#X msg 175 235 listen 8880;
+#X msg 110 234 listen 0;
+#X obj 110 208 sel 0;
+#X obj 110 269 netreceive -u -b;
+#X obj 110 179 inlet;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 1 0 3 0;
+#X connect 2 0 5 0;
+#X connect 4 0 2 1;
+#X connect 6 0 9 0;
+#X connect 7 0 9 0;
+#X connect 8 0 7 0;
+#X connect 8 1 6 0;
+#X connect 9 0 0 0;
+#X connect 10 0 8 0;
+#X coords 0 479 1 478 140 40 0;
+#X restore 25 129 pd oscreceive 8880;
+#X obj 25 99 tgl 15 0 empty empty listen 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 231 345 unpack s f;
+#X floatatom 316 375 0 0 0 0 id - -;
+#X symbolatom 231 375 0 0 0 0 name - -;
+#X obj 119 257 route ready shutdown open close;
+#X obj 231 292 t a;
+#X obj 24 33 loadbang;
+#X msg 24 58 1;
+#X obj 25 419 route gc0;
+#X obj 25 444 route button;
+#X obj 30 503 outlet;
+#X connect 5 0 17 0;
+#X connect 5 1 13 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 1;
+#X connect 8 0 6 0;
+#X connect 9 0 8 0;
+#X connect 10 0 12 0;
+#X connect 10 1 11 0;
+#X connect 13 0 0 0;
+#X connect 13 1 1 0;
+#X connect 13 2 2 0;
+#X connect 13 2 14 0;
+#X connect 13 3 3 0;
+#X connect 13 3 14 0;
+#X connect 14 0 10 0;
+#X connect 15 0 16 0;
+#X connect 16 0 9 0;
+#X connect 17 0 18 0;
+#X connect 18 0 19 0;
+#X restore 95 33 pd joyosc;
+#X obj 272 56 text define -k ddr_joyosc_\$0;
+#A set back 8 \; start 9 \; y 0 \; a 6 \; x 7 \; leftshoulder 4 \;
+b 1 \; rightshoulder 5 \;;
+#X obj 95 57 abs_lookup ddr_joyosc_\$0;
+#X obj 95 97 abs_lookup mapping_\$0;
+#X obj 95 184 abs_lookup outputs_\$0;
+#N canvas 229 262 493 360 view 0;
+#X obj 21 9 inlet;
+#X obj 23 81 route 0 1 2 3 4 5 6 7 8 9;
+#X obj 23 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 40 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 57 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 74 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 91 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 109 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 126 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 143 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 160 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 177 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 228 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 261 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 228 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 245 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 262 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 228 143 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 262 143 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 227 165 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 244 165 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 261 165 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X obj 286 71 route 8 9;
+#X obj 285 98 route 6 0 7;
+#X obj 287 121 route 2 3;
+#X obj 285 144 route 4 1 5;
+#X obj 23 39 t a a;
+#X connect 0 0 26 0;
+#X connect 1 0 2 0;
+#X connect 1 1 3 0;
+#X connect 1 2 4 0;
+#X connect 1 3 5 0;
+#X connect 1 4 6 0;
+#X connect 1 5 7 0;
+#X connect 1 6 8 0;
+#X connect 1 7 9 0;
+#X connect 1 8 10 0;
+#X connect 1 9 11 0;
+#X connect 22 0 12 0;
+#X connect 22 1 13 0;
+#X connect 22 2 23 0;
+#X connect 23 0 14 0;
+#X connect 23 1 15 0;
+#X connect 23 2 16 0;
+#X connect 23 3 24 0;
+#X connect 24 0 17 0;
+#X connect 24 1 18 0;
 #X connect 24 2 25 0;
-#X connect 25 0 16 0;
-#X connect 25 1 17 0;
-#X connect 25 2 18 0;
-#X connect 25 3 26 0;
-#X connect 26 0 19 0;
-#X connect 26 1 20 0;
-#X connect 26 2 27 0;
-#X connect 27 0 21 0;
-#X connect 27 1 22 0;
-#X connect 27 2 23 0;
-#X connect 30 0 2 0;
-#X connect 31 0 30 0;
-#X connect 32 0 30 0;
-#X connect 33 0 3 0;
-#X connect 33 1 24 0;
-#X connect 39 0 42 0;
-#X connect 40 0 44 0;
-#X connect 40 1 44 0;
-#X connect 41 0 40 1;
-#X connect 42 0 2 0;
-#X connect 43 0 40 0;
-#X connect 43 1 41 0;
-#X connect 44 0 36 0;
-#X connect 44 0 37 0;
-#X connect 44 0 38 0;
-#X connect 44 0 45 0;
-#X connect 47 0 50 0;
-#X connect 47 1 46 0;
-#X connect 47 2 1 0;
-#X connect 48 0 47 0;
-#X connect 50 0 32 0;
+#X connect 25 0 19 0;
+#X connect 25 1 20 0;
+#X connect 25 2 21 0;
+#X connect 26 0 1 0;
+#X connect 26 1 22 0;
+#X restore 37 98 pd view;
+#X obj 95 215 t a;
+#X connect 6 0 13 0;
+#X connect 6 1 13 0;
+#X connect 7 0 6 1;
+#X connect 9 0 11 0;
+#X connect 11 0 12 0;
+#X connect 11 0 14 0;
+#X connect 12 0 6 0;
+#X connect 12 1 7 0;
+#X connect 13 0 15 0;
+#X connect 15 0 3 0;
+#X connect 15 0 4 0;
+#X connect 15 0 5 0;
+#X connect 15 0 8 0;
