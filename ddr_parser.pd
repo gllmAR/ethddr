@@ -1,13 +1,13 @@
-#N canvas 1039 240 578 481 12;
-#X text 199 29 DDR parser;
-#X obj 294 88 text define -k mapping_\$0;
+#N canvas 976 246 580 358 12;
+#X text 247 31 DDR parser;
+#X obj 342 90 text define -k mapping_\$0;
 #A set 0 centre \; 1 centre \; 2 gauche \; 3 droite \; 4 gauche \;
 5 droite \; 6 gauche \; 7 droite \;;
-#X obj 293 182 text define -k outputs_\$0;
+#X obj 341 184 text define -k outputs_\$0;
 #A set 0 up \; 1 down \; 2 left \; 3 right \; 8 space \; 9 enter \;
 ;
-#X symbolatom 146 253 10 0 0 0 - - -;
-#X obj 128 255 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+#X symbolatom 194 255 10 0 0 0 - - -;
+#X obj 176 257 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
 -1 -1;
 #N canvas 409 204 808 611 send_osc 0;
 #X obj 11 11 inlet;
@@ -46,7 +46,7 @@
 #X connect 15 1 3 0;
 #X connect 15 2 7 0;
 #X connect 16 0 15 0;
-#X restore 117 277 pd send_osc;
+#X restore 165 279 pd send_osc;
 #N canvas 706 180 1081 878 filtre_complexe 0;
 #X obj 162 83 inlet;
 #X obj 162 110 list trim;
@@ -149,8 +149,8 @@
 #X connect 28 0 29 0;
 #X connect 40 0 9 0;
 #X connect 41 0 40 0;
-#X restore 95 152 pd filtre_complexe;
-#N canvas 0 23 450 300 filtre_on 0;
+#X restore 143 154 pd filtre_complexe;
+#N canvas 71 173 450 300 filtre_on 0;
 #X obj 65 17 inlet;
 #X obj 105 107 outlet;
 #X obj 65 46 expr if($f2==1 \, $f1 \, -1);
@@ -160,7 +160,7 @@
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 1 1 0;
-#X restore 239 127 pd filtre_on;
+#X restore 287 129 pd filtre_on;
 #N canvas 683 145 808 379 send_dmx 0;
 #X obj 72 110 inlet;
 #X obj 129 614 netsend -b -u;
@@ -233,7 +233,7 @@
 #X connect 30 0 31 0;
 #X connect 30 1 24 0;
 #X connect 31 0 5 0;
-#X restore 108 300 pd send_dmx;
+#X restore 156 302 pd send_dmx;
 #N canvas 805 102 709 734 joyosc 0;
 #X obj 119 291 bng 15 250 50 0 empty empty empty 0 20 0 10 -262144
 -1 -1;
@@ -304,17 +304,17 @@
 #X connect 16 0 9 0;
 #X connect 17 0 18 0;
 #X connect 18 0 19 0;
-#X restore 95 33 pd joyosc;
-#X obj 272 56 text define -k ddr_joyosc_\$0;
+#X restore 143 35 pd joyosc;
+#X obj 320 58 text define -k ddr_joyosc_\$0;
 #A set back 8 \; start 9 \; y 0 \; a 6 \; x 7 \; leftshoulder 4 \;
 b 1 \; rightshoulder 5 \;;
-#X obj 95 57 abs_lookup ddr_joyosc_\$0;
-#X obj 95 97 abs_lookup mapping_\$0;
-#X obj 95 184 abs_lookup outputs_\$0;
+#X obj 143 59 abs_lookup ddr_joyosc_\$0;
+#X obj 143 99 abs_lookup mapping_\$0;
+#X obj 143 186 abs_lookup outputs_\$0;
 #N canvas 229 262 493 360 view 0;
 #X obj 21 9 inlet;
 #X obj 23 81 route 0 1 2 3 4 5 6 7 8 9;
-#X obj 23 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 23 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 40 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -330,17 +330,17 @@ b 1 \; rightshoulder 5 \;;
 1;
 #X obj 143 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 160 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 160 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 177 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 177 113 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 228 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 228 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 261 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+#X obj 261 92 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
 #X obj 228 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
-#X obj 245 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+#X obj 245 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
 1;
 #X obj 262 117 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
 1;
@@ -385,8 +385,10 @@ b 1 \; rightshoulder 5 \;;
 #X connect 25 2 21 0;
 #X connect 26 0 1 0;
 #X connect 26 1 22 0;
-#X restore 37 98 pd view;
-#X obj 95 215 t a;
+#X restore 83 97 pd view;
+#X obj 143 217 t a;
+#X text 27 60 text to int->;
+#X text -5 98 int to pos->;
 #X connect 6 0 13 0;
 #X connect 6 1 13 0;
 #X connect 7 0 6 1;
